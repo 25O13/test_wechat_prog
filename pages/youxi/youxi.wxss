@@ -1,0 +1,17 @@
+.teethbrush{
+  width: 550rpx;
+  height: 400rpx;
+}
+
+.down_con{
+  width: 600rpx;
+  height: 600rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 400rpx;
+  border-style:dashed;
+ border-color: #ff9999;
+ border-width:20rpx;
+}

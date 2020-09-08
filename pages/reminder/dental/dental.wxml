@@ -1,0 +1,63 @@
+<!--pages/reminder/dental/dental.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+
+<view class="reminder_container">
+	<view class="reminder">
+		<text class="tip">{{tips}}</text>
+	</view>
+
+	<view class="reminder_2">
+		<view class="reminder_head">
+			<text class="head_txt">距上次看牙医已有</text>
+		</view>
+		<view class="reminder_body">
+			<text class="body_txt" wx:if="{{dental_num}}">{{dental_num}}天</text>
+			<text class="body_txt" wx:if="{{dental_num == 0}}">今天刚看了牙医</text>
+		</view>
+		<view class="reminder_bottom" bindtap="dental_action">
+			<view class="conf" style="background-color: {{theme_color}};">
+				<text class="bottom_txt">刚看过牙医</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="reminder_3">
+		<view class="reminder_3_1">
+			<text class="month_hint_txt_1">提醒我</text>
+		</view>
+		<view class="month_choose">
+			<view class="month_L" style="background-color: {{theme_color}};    border-color: #000000 {{theme_color}} #000000 #000000;">
+				<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="picker_container">
+					<view class="picker">
+						<text class="picker_txt">{{array[index]}}</text>
+					</view>
+				</picker>
+			</view>
+			<view class="month_R">
+				<image class="month_icon" src="/image/up_dowm.png"></image>
+			</view>
+		</view>
+		<view class="reminder_3_2">
+			<text class="month_hint_txt_2">个月看一次牙医</text>
+		</view>
+		<view class="reminder_swt">
+			<switch color="#ff9999"></switch>
+		</view>
+	</view>
+
+	<view class="reminder_4" bindtap="go_task">
+		<view class="reminder_head_4">
+			<view class="reminder_head_4_txt">
+				<text class="reminder_head_4_txt_tip">看牙医的注意事项</text>
+			</view>
+			<view class="reminder_head_4_next">
+				<text class="reminder_head_4_next_txt">MORE</text>
+				<image class="reminder_head_4_next_icon" src="/image/right.png"></image>
+			</view>
+		</view>
+		<view class="reminder_hint_4">
+			<text class="reminder_hint_4_extip">{{choose_tip}}</text>
+		</view>
+	</view>
+
+</view>

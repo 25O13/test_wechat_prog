@@ -1,0 +1,70 @@
+<include src="/pages/navi/navi_back.wxml" />
+
+<view class="register_container">
+	<view class="first">
+		<input value="{{username}}" bindinput="inputUsername" placeholder="请设置账号 6-16位数字" placeholder-class="plas" class="inputs" type="text"></input>
+	</view>
+
+	<view class="second">
+		<input value="{{password}}" bindinput="inputPassword" placeholder="请设置密码 6-16位" placeholder-class="plas" class="inputs" type="password"></input>
+	</view>
+
+	<view class="second">
+		<input value="{{password_asr}}" bindinput="inputPassword_asr" placeholder="请确认密码" placeholder-class="plas" class="inputs" type="password"></input>
+	</view>
+
+	<view class="third">
+		<view class="line4_1" wx:if="{{gender == 0}}" style="border-color: {{theme_color}};border-style: solid; border-width: 2px;" bindtap="girl">
+			<image class="sex_image" src="/image/girl.png"></image>
+			<text class="text1">女孩子</text>
+		</view>
+		<view class="line4_1" wx:if="{{gender == 1}}" bindtap="girl">
+			<image class="sex_image" src="/image/girl.png"></image>
+			<text class="text1">女孩子</text>
+		</view>
+
+		<view class="line4_2" wx:if="{{gender == 1}}" style="border-color: {{theme_color}};border-style: solid; border-width: 2px;" bindtap="boy">
+			<image class="sex_image" src="/image/boy.png"></image>
+			<text class="text1">男孩子</text>
+		</view>
+		<view class="line4_2" wx:if="{{gender == 0}}" bindtap="boy">
+			<image class="sex_image" src="/image/boy.png"></image>
+			<text class="text1">男孩子</text>
+		</view>
+
+	</view>
+
+	<view class="third">
+		<view class="line5_1">
+			<text class="text1">小朋友的生日是</text>
+		</view>
+
+		<picker mode="date" value="{{date}}" start="2000-01-01" end="2020-09-01" bindchange="bindDateChange">
+			<view class="picker">
+				{{date}}
+			</view>
+		</picker>
+
+	</view>
+
+	<view class="third">
+		<view class="line6_1">
+			<text class="text1">牙刷使用多久了？</text>
+		</view>
+
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+			<view class="picker">
+				{{array[index]}}个月
+			</view>
+		</picker>
+
+	</view>
+
+	<view class="register_butn" bindtap="register" style="background-color: {{theme_color}}">
+		<text class="register_text">注册</text>
+	</view>
+
+	<text bindtap="tologin" class="tologin">已有账号,快点我登录吧~</text>
+
+
+</view>

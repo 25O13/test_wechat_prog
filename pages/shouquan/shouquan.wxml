@@ -1,0 +1,24 @@
+<!--pages/mytheme/mytheme.wxml-->
+<include src="/pages/navi/navi.wxml" />
+<view class="shouquan_beijing" style = "height: {{scrH*0.9}}px;width: {{scrW}}px;">
+  <view class="yuan" style = "width:{{scrW}}px;height:{{0.3*scrH}}px;margin-top:{{0.02*scrH}}px;">
+    <view class="yuan1" style = "height:{{0.45*scrW}}px;width:{{0.45*scrW}}px;">
+      <image class="yachi" src="/image/yachi1.png" style = "width:{{0.3*scrW}}px;height:{{0.3*scrW}}px;margin-top:{{0.075*scrW}}px;"></image>
+    </view>
+  </view>
+  <view class="text1" style = "height:{{0.15*scrH}}px;width:{{scrW}}px;">
+      <text class="shenqing">申请获得以下权限</text>
+  </view> 
+  <view class="text2" style = "width:{{scrW}}px;height:{{0.07*scrH}}px;">
+    <text class="huode">获得您的公开信息（昵称、头像等）</text>   
+  </view>
+  <button class="anniu" style = "height:{{0.15*scrH}}px;width:{{scrW}}px;" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+    <view class="anniu1" >
+      <text class="shouquandenglv">授权登录</text>
+    </view>
+  </button>
+  <view class="shuaya" style = "width:{{scrW}}px;height:{{0.25*scrH}}px;">
+    <image class="shuaya1" src="/image/s31.png"></image>
+  </view>
+
+</view>

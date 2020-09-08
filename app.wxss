@@ -1,0 +1,68 @@
+/**app.wxss**/
+
+@font-face{
+  font-family: "mf";
+  src: url(https://lc-7ehedeg3.cn-n1.lcfile.com/d6995f62c142c6a51c54/mf_2.ttf);
+}
+
+
+
+
+
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.navi {
+  z-index: 99;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navi_L {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.navi_back {
+  width: 45rpx;
+  height: 50rpx;
+  margin-bottom: 10rpx;
+  margin-left: 40rpx;
+}
+
+.navi_cen {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.navi_R {
+  width: 30%;
+  height: 100%;
+}
+
+.navi_txt {
+  font-size: 40rpx;
+  font-family: "mf";
+  color: white;
+  margin-bottom: 10px;
+}

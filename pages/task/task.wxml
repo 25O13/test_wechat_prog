@@ -1,0 +1,31 @@
+<!--pages/task/task.wxml-->
+<include src="/pages/navi/navi.wxml" />
+
+<view class="text1" style="color: {{theme_color}};">口腔 の 小知识</view>
+<view class="butt6">
+  <view class="but" style="background-color: {{butt_co[0].but_bco}}; color:{{butt_co[0].but_co}}; border-color: {{theme_color}};" id="0" bindtap="tapButton">0~半岁</view>
+  <view class="but" style="background-color: {{butt_co[1].but_bco}}; color:{{butt_co[1].but_co}}; border-color: {{theme_color}};" id="1" bindtap="tapButton">半岁~1岁半</view>
+  <view class="but" style="background-color: {{butt_co[2].but_bco}}; color:{{butt_co[2].but_co}}; border-color: {{theme_color}};" id="2" bindtap="tapButton"> 1岁半~3岁</view>
+</view>
+
+<view class="frame" style="background-color: {{theme_color}};">
+  <image class="im1" src="/image/2020_08_15/s45.png"></image>
+  <image class="im2" src="/image/2020_08_15/s20.png"> </image>
+  <image class="im3" src="/image/2020_08_15/s44.png"></image>
+</view>
+
+<view class="buttons" style="background-color: {{theme_color}};">
+  <view class="btn" style="color: {{theme_color}};" bindtap="go_know" id="1">清洁</view>
+  <view class="btn" style="color: {{theme_color}};" bindtap="go_know" id="2">保护</view>
+  <view class="btn" style="color: {{theme_color}};" bindtap="go_know" id="3">发育</view>
+</view>
+
+<view class="butt6">
+  <view class="but2" style="background-color: {{butt_co[3].but_bco}}; color:{{butt_co[3].but_co}}; border-color: {{theme_color}};" id="3" bindtap="tapButton">3岁~6岁</view>
+  <view class="but2" style="background-color: {{butt_co[4].but_bco}}; color:{{butt_co[4].but_co}}; border-color: {{theme_color}};" id="4" bindtap="tapButton">6岁~12岁</view>
+  <view class="but2" style="background-color: {{butt_co[5].but_bco}}; color:{{butt_co[5].but_co}}; border-color: {{theme_color}};" id="5" bindtap="tapButton">12岁以上</view>
+</view>
+
+<image class="imax" src="/image/2020_08_15/s48.png"></image>
+
+<include src="/pages/botton/botton" />

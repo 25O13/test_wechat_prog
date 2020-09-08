@@ -1,0 +1,91 @@
+<!--pages/mytheme/mytheme.wxml-->
+<include src="/pages/navi/navi.wxml" />
+<view class="background">
+	<view class="xuangua">
+		<view class="kuang1" bindtap="go_reminder">
+			<view class="shengzi1" style="background-color:{{theme_color}}"></view>
+			<view class="tixing" style = "background-color:{{theme_color}}">
+				<view class="tixing1">
+					<image class="bell" src="/image/bell.png"></image>
+				</view>
+				<view class="tixing2">
+					<text class="tixing3">提醒</text>
+				</view>
+			</view>
+		</view>
+		<view class="kuang2" bindtap="go_brush">
+			<view class="shengzi2" style="background-color:{{theme_color}}"></view>
+			<view class="rili" style = "background-color:{{theme_color}}">
+				<view class="rili1">
+					<image class="rilili" src="/image/rili.png"></image>
+				</view>
+				<view class="rili2">
+					<text class="rili3">{{countiDays}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="kuang3" bindtap="go_change">
+			<view class="shengzi3" style="background-color:{{theme_color}}"></view>
+			<view class="yashua" style = "background-color:{{theme_color}}">
+				<view class="yashua1">
+					<image class="brush" src="/image/diandongyashua.png"></image>
+				</view>
+				<view class="yashua2">
+					<text class="yashua3">{{brush_num}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="kuang4" bindtap="go_dental">
+			<view class="shengzi4" style = "background-color:{{theme_color}}"></view>
+			<view class="yayi" style = "background-color:{{theme_color}}">
+				<view class="yayi1">
+					<image class="doctor" src="/image/yayiyi.png"></image>
+				</view>
+				<view class="yayi2">
+					<text class="yayi3">{{dental_num}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="youxi">
+		<view class="youxi1" bindtap="go_game">
+			<image class="youxiji" src="/image/youxi3.png"></image>
+			<view class="text" style = "background-color:{{theme_color}}">
+				<view class="text1">
+					<text class="shua">刷</text>
+				</view>
+				<view class="text2">
+					<text class="ya">牙</text>
+				</view>
+
+				<view class="text3">
+					<text class="da">大</text>
+				</view>
+				<view class="text4">
+					<text class="zuo">作</text>
+				</view>
+				<view class="text5">
+					<text class="zhan">战</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="defen">
+		<view class="kuang" style = "background-color:{{theme_color}}">
+			<view class="tuanzi">
+				<image class="caotuanzi" src="/image/tuan.png"></image>
+			</view>
+			<view class="3_text">
+				<view class="jinri">
+					<text class="textjinri">今日得分：</text>
+				</view>
+				<view class="fenshu">
+					<text class="textfenshu">{{score}}分!</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<include src="/pages/botton/botton" />

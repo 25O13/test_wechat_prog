@@ -1,0 +1,397 @@
+/* pages/parents/parents.wxss */
+page {
+  background-color: #e4e4e4;
+}
+
+.parents_background {
+  background-color: #e4e4e4;
+  height: 100%;
+  width: 100%;
+  /* position: fixed;
+  bottom: 0rpx; */
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.reminder1 {
+  background-color: #FFFFFF;
+  height: 180rpx;
+  width: 700rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16rpx;
+}
+
+.reminder2 {
+  background-color: #FFFFFF;
+  height: 400rpx;
+  width: 700rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16rpx;
+}
+
+.reminder3 {
+  background-color: #FFFFFF;
+  height: 500rpx;
+  width: 700rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16rpx;
+}
+
+.reminder_head1 {
+  margin-top: 10rpx;
+  height: 70rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.reminder_head2 {
+  margin-top:30rpx;
+  height: 70rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.reminder_head3 {
+  margin-top: 20rpx;
+  height: 70rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.line2 {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.next {
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #FF9999;
+  border-radius: 50rpx;
+  margin-left: 10rpx;
+}
+
+.next1 {
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #FF9999;
+  border-radius: 50rpx;
+  margin-left: 10rpx;
+  /* margin-top: -40rpx; */
+}
+
+.hint {
+  height: 50%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-end;
+
+}
+
+.txt1 {
+  margin-left: 20rpx;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.txt2 {
+  margin-left: 20rpx;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  /* margin-top: -40rpx; */
+}
+
+.txt3 {
+  margin-left: 20rpx;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  height: 20%;
+}
+
+.tip {
+  margin-left: 0rpx;
+  font-family: 'mf';
+  font-size: 36rpx;
+}
+
+.count_time {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.count_day {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 100rpx;
+  justify-content: left;
+}
+
+.count_days {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.extip {
+  margin-left: 18rpx;
+  font-size: 20rpx;
+  font-family: 'mf';
+  color: #666666;
+}
+
+.next_icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.choose1 {
+  width: 13%;
+  height: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 0%;
+  background-color: white;
+  border-radius: 8rpx;
+  border-width: 1rpx;
+  border-color: #FF9999;
+  border-style: solid;
+}
+
+.choose_2 {
+  width: 13%;
+  height: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 0%;
+  background-color: theme_color;
+  border-radius: 8rpx;
+  border-width: 1rpx;
+  border-color: #FF9999;
+  border-style: solid;
+}
+
+.choose2 {
+  border-width: 1rpx;
+  border-color: #FF9999;
+  border-style: solid;
+  border-radius: 8rpx;
+  width: 15%;
+  height: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 0%;
+  background-color: #FF9999;
+}
+
+.choose_1 {
+  border-width: 1rpx;
+  border-color: #FF9999;
+  border-style: solid;
+  border-radius: 8rpx;
+  width: 15%;
+  height: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 0%;
+  background-color: #FF9999;
+}
+
+.seven_days {
+  padding-left: 10rpx;
+  padding-top: 4rpx;
+  font-size: 20rpx;
+  color: #FF9999;
+}
+
+.seven_day {
+  padding-left: 10rpx;
+  padding-top: 4rpx;
+  font-size: 20rpx;
+  color: white;
+}
+
+.thirty_days {
+  padding-left: 10rpx;
+  padding-top: 4rpx;
+  font-size: 20rpx;
+  color: white;
+}
+
+.button_record {
+  width: 85%;
+  height: 40rpx;
+}
+
+.choose {
+  height: 40rpx;
+  margin-top: 0rpx;
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+}
+.lines{
+  width:100%;
+  height:75rpx;
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  width:10%;
+  height:70rpx;
+  margin-left:30rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.column_3{
+  width:15%;
+  height:70rpx;
+}
+
+.column_2{
+  width:55%;
+  height:70rpx;
+  margin-left:50rpx;
+}
+
+.column_1{
+  width:15%;
+  height:70rpx;
+  margin-left:50rpx;
+}
+
+.date{
+  font-size:30rpx;
+  color:black;
+  height:70rpx;
+}
+.tool{
+  font-size:30rpx;
+  color:black;
+  height:70rpx;
+}
+.time{
+  font-size:30rpx;
+  color:black;
+  height:70rpx;
+}
+.lasting{
+  font-size:30rpx;
+  color:black;
+  height:70rpx;
+}
+.messa{
+  width:100%;
+  height:300rpx;
+}
+
+.score_show{
+  width: 640rpx;
+  height: 100%;
+  margin-left:30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+}
+.score_body{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  bottom: 0rpx;
+}
+.column1{
+  width: 80rpx;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  bottom: 0rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.lines1{
+  font-family: 'mf';
+  font-size: 30rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  
+}
+.lines2{
+  width: 80rpx;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.std{
+  width: 60rpx;
+  font-size: 30rpx;
+  font-family: 'mf';
+  margin-bottom: 34rpx;
+}
+.std1{
+  width: 60rpx;
+  font-size: 30rpx;
+  font-family: 'mf';
+  margin-bottom: 26rpx;
+  
+}
+.shallow{
+  width: 50rpx;
+  margin-bottom: 0rpx;
+  height: 100%;
+}

@@ -1,0 +1,117 @@
+<!--pages/parents/parents.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+
+<view class="parents_background">
+	<view class="reminder1">
+		<view class="reminder_head1">
+			<view class="next" style="background-color: {{theme_color}}">
+				<image class="next_icon" src="/image/brush.png"></image>
+			</view>
+			<view class="txt1">
+				<text class="tip">您的孩子今天已清洁牙齿</text>
+			</view>
+			<view class="count_time">
+				<text class = "tip">次</text>
+			</view>
+		</view>
+		<view class="line2">
+			<view class="count_day">
+				<text class="tip">已连续清洁牙齿</text>
+			</view>
+			<view class="count_days">
+				<text class = "tip">{{countiDays}}天</text>
+			</view>
+		</view>
+	</view>
+	<view class="reminder2">
+		<view class="reminder_head2">
+			<view class="next1" style="background-color: {{theme_color}}">
+				<image class="next_icon" src="/image/record.png"></image>
+			</view>
+			<view class="txt2">
+				<text class="tip">牙齿清洁记录</text>
+			</view>
+		</view>
+
+		<scroll-view class="messa" scroll-y="true">
+			<block wx:for="{{list}}">
+				<view class="lines">
+					<view class="column_2">
+						<text class = "date">{{item.date}}</text>
+					</view>
+					<!-- <view class="column">
+						<text class = "time">{{item.time}}</text>
+					</view> -->
+					<view class="column_1">
+						<text class = "tool">{{item.tool}}</text>
+					</view>
+
+
+					<view class="column">
+						<text class = "lasting" style="color: red" wx:if="{{item.lasting > 0 && item.lasting <120}}">{{item.lasting}}</text>
+						<text class = "lasting" wx:if="{{(item.lasting >= 120 && item.lasting <150) || item.lasting > 210}}">{{item.lasting}}</text>
+						<text class = "lasting" style="color: green" wx:if="{{item.lasting >= 150 && item.lasting <= 210}}">{{item.lasting}}</text>
+					</view>
+					<view class="column_3">
+						<text class="lasting" wx:if="{{item.lasting != 0}}">秒</text>
+					</view>
+
+
+
+				</view>
+			</block>
+		</scroll-view>
+
+	</view>
+	<view class="reminder3">
+		<view class="reminder_head3">
+			<view class="next" style="background-color: {{theme_color}}">
+				<image class="next_icon" src="/image/statistics.png"></image>
+			</view>
+			<view class="txt3">
+				<text class="tip" >统计</text>
+			</view>
+		</view>
+		<!-- <view class="choose">
+			<view class="choose1" style="border-color:{{theme_color}};background-color:{{bcol1}}">
+				<text class="seven_days" bindtap = "change_color1" style="color:{{col1}};" >最近7日</text>
+			</view>
+			<view class="choose2" style="border-color:{{theme_color}};background-color:{{bcol2}}">
+				<text class = "thirty_days" bindtap = "change_color2" style="color:{{col2}};">最近30日</text>
+			</view>
+		</view> -->
+
+		<view class="score_show">
+			<view class="column1">
+				<text class="std" style="color:{{theme_color}}">100</text>
+				<text class="std" style="color:{{theme_color}}">80</text>
+				<text class="std" style="color:{{theme_color}}">60</text>
+				<text class="std" style="color:{{theme_color}}">40</text>
+				<text class="std" style="color:{{theme_color}}">20</text>
+				<text class="std1" style="color:{{theme_color}}">0</text>
+
+			</view>
+
+			<scroll-view class="score_body" scroll-x="true" enable-flex="true">
+				<block wx:for="{{list1}}">
+					<view class="column1">
+						<view class="lines1">
+							<text class = "score_num">{{item.num}}</text>
+						</view>
+
+						<view class="lines2" style="height:{{item.num*0.82}}%">
+							<view class="shallow" style="background-color: {{theme_color}}"></view>
+						</view>
+
+						<view class="lines1">
+							<text class = "score_date">{{item.date}}</text>
+						</view>
+
+					</view>
+				</block>
+			</scroll-view>
+
+		</view>
+
+	</view>
+</view>

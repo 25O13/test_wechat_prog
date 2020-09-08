@@ -1,0 +1,22 @@
+<!--pages/botton/botton.wxml-->
+<view class="botton_container" style="background-color: {{theme_color}};">
+	<view class="icon" bindtap="tap_1" style="background-color: {{bco1}};">
+		<text class="house" style="color: {{co1}};">氚</text>
+	</view>
+	<view class="icon" bindtap="tap_2" style="background-color: {{bco2}};">
+		<text class="cam" style="color: {{co2}};">氘</text>
+	</view>
+	<view class="icon_2" bindtap="tap_3">
+		<view class="tooth_container">
+			<view class="tooth_box">
+				<text class="tooth" style="color: {{theme_color}}">氕</text>
+			</view>
+		</view>
+	</view>
+	<view class="icon" bindtap="tap_4" style="background-color: {{bco4}};">
+		<text class="book" style="color: {{co4}};">氡</text>
+	</view>
+	<view class="icon" bindtap="tap_5" style="background-color: {{bco5}};">
+		<text class="me" style="color: {{co5}};">氪</text>
+	</view>
+</view>

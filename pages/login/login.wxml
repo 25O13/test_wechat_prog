@@ -1,0 +1,20 @@
+<include src="/pages/navi/navi.wxml" />
+
+<view class="login_container">
+  <view class="first">
+    <input value="{{username}}" bindinput="inputUsername" placeholder="账号" placeholder-class="plas" class="inputs" type="text"></input>
+  </view>
+
+  <view class="second">
+    <input value="{{password}}" bindinput="inputPassword" placeholder="密码" placeholder-class="plas" class="inputs" type="password"></input>
+  </view>
+
+  <view bindtap="login" class="login_butn" style="background-color: {{theme_color}}">
+    <text class="login_text">登录</text>
+  </view>
+
+  <text bindtap="toregister" class="toregister">还没有账号？快点我注册吧~</text>
+  
+  <image class="decorate" src='/image/bottom1.png'></image>
+  
+</view>

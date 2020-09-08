@@ -1,0 +1,17 @@
+<include src="/pages/navi/navi.wxml" />
+<view class="up" style="margin-left: {{scrW*0.1}}px;margin-right:{{scrW*0.1}}px;margin-top:{{scrH*0.08}}px;height: {{scrH*0.3}}px;display: flex;flex-direction: row;justify-content: center;align-items: center;">
+	<view class="round" style="border-color: {{theme_color}};  height: {{0.73*scrW}}px;width: {{0.73*scrW}}px;display: flex;border-radius: {{0.5*scrW}}px;border-width:{{0.015*scrW}}px;border-style: dashed;justify-content: center;align-items: center; background-color:rgb(242,242,242);">
+		<image style=" height: {{0.36*scrW}}px;width:{{0.4*scrW}}px;" src="/image/camera.png" wx:if="{{camFlag == 0}}" bindtap="start_cam"></image>
+		<camera device-position="{{dev_pos}}" flash="off" binderror="error" style="width: 100%; height: 100%;   border-radius: 50%;" wx:if="{{camFlag == 1}}" bindtap="change_cam"></camera>
+		<image style="width: 100%; height: 100%;   border-radius: 50%;" src="{{src}}" wx:if="{{camFlag == 2}}"></image>
+	</view>
+</view>
+<view class="button" style=" display: flex;flex-direction: row;justify-content: center;align-items: center;margin-top:{{0.1*scrH}}px;background-color: #FF9999;height:{{0.1*scrH}}px;width:{{0.4*scrW}}px;border-radius:{{0.03*scrW}}px;margin-left:{{0.3*scrW}}px;margin-right:{{0.3*scrW}}px;background-color: {{theme_color}};" bindtap="takePhoto">
+	<text class = "word" style = "color: white;font-size: {{0.067*scrW}}px;" wx:if="{{camFlag !=2}}">拍照识别</text>
+	<text class = "word" style = "color: white;font-size: {{0.067*scrW}}px;" wx:if="{{camFlag == 2}}">确定照片？</text>
+</view>
+
+<view class="down" style="height: {{scrH*0.3}}px;display: flex;flex-direction: row;justify-content: center;align-items: center;">
+	<image class="bottom" style="width:{{scrW}}px;height:{{scrH*0.3}}px;" src="/image/bottom.png"></image>
+</view>
+<include src="/pages/botton/botton" />

@@ -1,0 +1,187 @@
+/* pages/mytheme/mytheme.wxss */
+page {
+  background-color: #f2f2f2;
+}
+
+.one {
+  margin-top: 50rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one1 {
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.message11 {
+  font-size: 40rpx;
+  margin-left: 125rpx;
+  font-family: "mf";
+
+}
+
+.message12 {
+  font-size: 40rpx;
+  margin-right: 50rpx;
+  font-family: "mf";
+}
+.two {
+  margin-top: 40rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two1 {
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.message21 {
+  font-size: 40rpx;
+  margin-left: 125rpx;
+  font-family: "mf";
+}
+
+.message22 {
+  font-size: 40rpx;
+  margin-right: 50rpx;
+  font-family: "mf";
+
+}
+.three {
+  margin-top: 40rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three1 {
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.message31 {
+  font-size: 40rpx;
+  margin-left: 15rpx;
+  font-family: "mf";
+}
+
+.message32 {
+  font-size: 40rpx;
+  margin-right: 100rpx;
+  font-family: "mf";
+
+}
+
+.four {
+  margin-top: 40rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four1 {
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.message41 {
+  font-size: 40rpx;
+  margin-left: 15rpx;
+  font-family: "mf";
+}
+
+.message42 {
+  font-size: 40rpx;
+  margin-right: 50rpx;
+  font-family: "mf";
+}
+.five {
+  margin-top: 40rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.five1 {
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.message51 {
+  font-size: 40rpx;
+  font-family: "mf";
+  margin-left: 125rpx;
+}
+
+.message52 {
+  font-size: 40rpx;
+  font-family: "mf";
+  margin-right: 80rpx;
+}
+.six {
+  margin-top: 80rpx;
+  height: 350rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.six1 {
+  /* background-color: #ffffff; */
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.message61{
+  font-size: 40rpx;
+  font-family: "mf";
+}
+.message62{
+  font-family: "mf";
+  font-size: 40rpx;
+}
+.message63{
+  height: 100rpx;
+  width:  250rpx;
+  background-color: #ff9999;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message64{
+  font-size: 40rpx;
+  font-family: "mf";
+  color: #ffffff;
+}

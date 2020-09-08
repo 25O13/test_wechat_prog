@@ -1,0 +1,15 @@
+<!--youxi.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+
+<!-- <view class="pageContainer" style="width: {{scrW}}px;height: {{scrH}}px;display: flex;flex-direction: column;justify-content: center;align-items: center;"> -->
+	<view class="top" style="width:{{scrW}}px;height:{{0.3*scrH}}px;">
+		<image class="jietu" style=" width: {{scrW}}px;height: {{0.3*scrH}}px;display: flex;flex-direction: column;justify-content: center;align-items: center;" src="/image/jietu.png" />
+	</view>
+
+	<view class="down" style="width: {{0.5*scrH}}px;height:{{0.5*scrH}}px;margin-left:{{(scrW-0.5*scrH)*0.5}}px;margin-right:{{(scrW-0.5*scrH)*0.5}}px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+		<view class="down_con">
+			<image class="teethbrush" src="/image/teeth_with_brush.png" />
+		</view>
+	</view>
+
+<!-- </view> -->

@@ -1,0 +1,279 @@
+/* pages/reminder/dental/dental.wxss */
+page{
+    background-color: #f2f2f2;
+}
+
+
+.reminder_container {
+    background-color: #f2f2f2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.reminder {
+    background-color: #FFFFFF;
+    height: 80rpx;
+    width: 700rpx;
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 16rpx;
+}
+
+.tip {
+    margin-left: 36rpx;
+    font-family: 'mf';
+    font-size: 32rpx;
+}
+
+.reminder_2 {
+    background-color: #FFFFFF;
+    height: 432rpx;
+    width: 700rpx;
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 16rpx;
+}
+
+.head_txt {
+    font-family: "mf";
+    font-size: 40rpx;
+    margin-left: 36rpx;
+    margin-top: 20rpx;
+}
+
+.reminder_head {
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+.reminder_body {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.body_txt {
+    margin-top: 15rpx;
+    font-family: "mf";
+    font-size: 40rpx;
+}
+
+.reminder_bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.conf {
+    margin-top: 22rpx;
+    width: 240rpx;
+    height: 96rpx;
+    display: flex;
+    justify-content: center;
+    background-color: #ff9999;
+    align-items: center;
+    border-radius: 12rpx;
+}
+
+.bottom_txt {
+    font-family: "mf";
+    font-size: 36rpx;
+}
+
+.reminder_3 {
+    background-color: #FFFFFF;
+    height: 180rpx;
+    width: 700rpx;
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16rpx;
+}
+
+.reminder_3_1 {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.month_hint_txt_1 {
+    font-size: 40rpx;
+    font-family: "mf";
+    margin-left: 36rpx;
+}
+
+.month_choose {
+    width: 16%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.month_L {
+    width: 70%;
+    height: 32%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9999;
+    border-style: solid;
+    border-width:1px;
+    border-color: #000000 #ff9999 #000000 #000000;
+}
+
+.picker_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.picker{
+    width: 72rpx;
+    height: 56rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.picker_txt{
+    font-size: 28rpx;
+    font-family: "mf";
+    margin-right: 10rpx;
+}
+
+.month_R {
+    width: 30%;
+    height: 32%;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width:1px;
+    border-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.month_icon{
+    width: 20rpx;
+    height: 20rpx;
+}
+
+.reminder_3_2 {
+    width: 39%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.month_hint_txt_2{
+    font-size: 28rpx;
+    font-family: "mf";
+    margin-left: 20rpx;
+}
+
+.reminder_swt {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reminder_4{
+    background-color: #FFFFFF;
+    height: 180rpx;
+    width: 700rpx;
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16rpx;
+}
+
+.reminder_head_4{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.reminder_head_4_txt{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.reminder_head_4_txt_tip{
+    margin-left: 36rpx;
+    font-family: 'mf';
+    font-size: 40rpx;
+    margin-top: 20rpx;
+}
+
+.reminder_head_4_next{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.reminder_head_4_next_txt{
+    font-family: "mf";
+    font-size: 28rpx;
+    margin-top: 24rpx;
+}
+
+.reminder_head_4_next_icon{
+    width: 40rpx;
+    height: 60rpx;
+    margin-top: 12rpx;
+}
+
+.reminder_hint_4{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.reminder_hint_4_extip{
+    margin-left: 36rpx;
+    font-size: 28rpx;
+    font-family: 'mf';
+    color: #666666;
+    line-height: 150%;
+}

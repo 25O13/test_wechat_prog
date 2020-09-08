@@ -1,0 +1,58 @@
+<!--pages/mytheme/mytheme.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+<view class="beijing" style="height:{{scrH*0.9}}px">
+	<view class="shang">
+		<view class="zuo">
+			<image class="shijuan" src="/image/shijuan.png"></image>
+		</view>
+		<view class="you">
+			<view class="shangtext">
+				<text class="yachidefen" style="color: {{theme_color}}">牙齿得分:</text>
+			</view>
+			<view class="xiatext">
+				<text class="fenshu" style="color:{{theme_color}}">95</text>
+			</view>
+			<view class="xian" style="background-color:{{theme_color}}"></view>
+		</view>
+	</view>
+
+	<view class="xia">
+		<view class="zuoxian"></view>
+		<view class="zhongjian" style="background-color:{{theme_color}}">
+			<view class="heixian"></view>
+			<view class="tou">
+				<text class="chengjidan">  成绩单</text>
+			</view>
+			<view class="heixian"></view>
+			<view class="kuangkuang" style="background-color:{{theme_color}};border-color: {{theme_color}} black black black;">
+				<text class="quchi">  龋齿：无</text>
+			</view>
+			<view class="heixian"></view>
+			<view class="kuangkuang" style="background-color:{{theme_color}};border-color: {{theme_color}} black black black;">
+				<text class="bai">  牙齿白度：90</text>
+			</view>
+			<view class="heixian"></view>
+			<view class="kuangkuang" style="background-color:{{theme_color}};border-color: {{theme_color}} black black black;">
+				<text class="zhengqi">  整齐度：97</text>
+			</view>
+			<view class="heixian"></view>
+			<view class="kuangkuang" style="background-color:{{theme_color}};border-color: {{theme_color}} black black black;">
+				<text class="chuxue">  牙齿出血：无</text>
+			</view>
+			<view class="heixian"></view>
+			<view class="kuangkuang" style="background-color:{{theme_color}};border-color: {{theme_color}} black black black;">
+				<text class="yayin">  牙龈颜色：正常</text>
+			</view>
+			<view class="heixian"></view>
+			<view class="kuangkuang" style="background-color:{{theme_color}};border-color: {{theme_color}} black black black;">
+				<text class="yazi">  牙渍：不明显</text>
+			</view>
+			<view class="heixian"></view>
+			<view class="kuangkuang" style="background-color:{{theme_color}};border-color: {{theme_color}} black black black;">
+				<text class="yajieshi"> 牙结石：不明显</text>
+			</view>
+			<view class="heixian"></view>
+		</view>
+		<view class="youxian"></view>
+	</view>
+</view>

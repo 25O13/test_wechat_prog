@@ -1,0 +1,64 @@
+<!--pages/reminder/change/change.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+
+<view class="reminder_container">
+	<view class="reminder">
+		<text class="tip">{{tips}}</text>
+	</view>
+
+	<view class="reminder_2">
+		<view class="reminder_head">
+			<text class="head_txt">当前牙刷已经使用</text>
+		</view>
+		<view class="reminder_body">
+			<!-- <text class="body_txt" wx:if="{{month}}">{{month}}个月</text> -->
+			<text class="body_txt" wx:if="{{brush_num}}">{{brush_num}}天</text>
+			<text class="body_txt" wx:if="{{brush_num == 0}}">今天才换啦</text>
+		</view>
+		<view class="reminder_bottom">
+			<view class="conf" bindtap="change_action" style="background-color: {{theme_color}};">
+				<text class="bottom_txt">我已更换</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="reminder_3">
+		<view class="reminder_3_1">
+			<text class="month_hint_txt_1">提醒我</text>
+		</view>
+		<view class="month_choose">
+			<view class="month_L" style="background-color: {{theme_color}};    border-color: #000000 {{theme_color}} #000000 #000000;">
+				<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="picker_container">
+					<view class="picker">
+						<text class="picker_txt">{{array[index]}}</text>
+					</view>
+				</picker>
+			</view>
+			<view class="month_R">
+				<image class="month_icon" src="/image/up_dowm.png"></image>
+			</view>
+		</view>
+		<view class="reminder_3_2">
+			<text class="month_hint_txt_2">个月换一次牙刷</text>
+		</view>
+		<view class="reminder_swt">
+			<switch color="#ff9999" bindchange="swt_brush"></switch>
+		</view>
+	</view>
+
+	<view class="reminder_4" bindtap="go_task">
+		<view class="reminder_head_4">
+			<view class="reminder_head_4_txt">
+				<text class="reminder_head_4_txt_tip">怎样挑选合适的牙刷</text>
+			</view>
+			<view class="reminder_head_4_next">
+				<text class="reminder_head_4_next_txt">MORE</text>
+				<image class="reminder_head_4_next_icon" src="/image/right.png"></image>
+			</view>
+		</view>
+		<view class="reminder_hint_4">
+			<text class="reminder_hint_4_extip">{{choose_tip}}</text>
+		</view>
+	</view>
+
+</view>

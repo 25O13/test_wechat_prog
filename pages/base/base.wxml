@@ -1,0 +1,62 @@
+<!--pages/mytheme/mytheme.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+<view class="one">
+	<view class="one1" style="width: 90%; height:100%">
+		<view style="width: 50%;height:100%;display: flex; justify-content: center;  align-items: center;">
+			<view class="message11">昵称:</view>
+		</view>
+		<view style="width: 50%;height:100%;  display: flex;  justify-content: center;  align-items: center;">
+			<view class="message12">{{nickname}}</view>
+		</view>
+	</view>
+</view>
+
+<view class="two">
+	<view class="two1" style="width: 90%; height:100%">
+		<view style="width: 50%;height:100%;display: flex; justify-content: center;  align-items: center;">
+			<view class="message21">账号:</view>
+		</view>
+		<view style="width: 50%;height:100%;  display: flex;  justify-content: center;  align-items: center;">
+			<view class="message22">{{account}}</view>
+		</view>
+	</view>
+</view>
+
+<view class="three">
+	<view class="three1" style="width: 90%; height:100%">
+		<view style="width: 50%;height:100%;display: flex; justify-content: center;  align-items: center;">
+			<view class="message31">孩子的年龄:</view>
+		</view>
+		<view style="width: 50%;height:100%;  display: flex;  justify-content: center;  align-items: center;">
+			<view class="message32">{{age}}</view>
+		</view>
+	</view>
+</view>
+
+<view class="four">
+	<view class="four1" style="width: 90%; height:100%">
+		<view style="width: 50%;height:100%;display: flex; justify-content: center;  align-items: center;">
+			<view class="message41">孩子的生日:</view>
+		</view>
+		<view style="width: 50%;height:100%;  display: flex;  justify-content: center;  align-items: center;">
+			<view class="message42">{{birthday}}</view>
+		</view>
+	</view>
+</view>
+
+<view class="five">
+	<view class="five1" style="width: 90%; height:100%">
+		<view style="width: 50%;height:100%;display: flex; justify-content: center;  align-items: center;">
+			<view class="message51">性别:</view>
+		</view>
+		<view style="width: 50%;height:100%;  display: flex;  justify-content: center;  align-items: center;">
+			<view class="message52">{{gender}}</view>
+		</view>
+	</view>
+</view>
+
+<view class="six">
+	<view class="six1" style="width: 90%; display: flex; flex-direction: column">
+	<image style="width: 580rpx; height: 400rpx;margin-left:60rpx" src="/image/base_bottom.png"></image>
+	</view>
+</view>

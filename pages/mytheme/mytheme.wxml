@@ -1,0 +1,53 @@
+<!--pages/mytheme/mytheme.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+
+<view class="theme_container">
+	<view class="theme_top">
+		<view class="theme_image_container">
+			<image class="theme_image" src="/image/light.png"></image>
+		</view>
+		<view class="theme_top_txt_container">
+			<view class="theme_top_txt_container_up">
+				<text class="theme_top_txt_up" style="color:{{theme_color}}">选择喜欢的</text>
+			</view>
+			<view class="theme_top_txt_container_down">
+				<text class="theme_top_txt_down" style="color:{{theme_color}}">主题吧</text>
+			</view>
+		</view>
+		<view class="theme_top_icon_container">
+			<text class="theme_top_icon" style="color:{{theme_color}}">!</text>
+		</view>
+	</view>
+	<view class="colorset_container" style="background-color:{{theme_color}}">
+		<text class="set_txt">颜色设置</text>
+	</view>
+
+	<view class="color_container">
+		<view class="color" style="background-color:#ff9999;" bindtap="change" data-mycolor="#ff9999"></view>
+		<view class="color" style="background-color:#F5B89F;" bindtap="change" data-mycolor="#F5B89F"></view>
+		<view class="color" style="background-color:#90c0c0;" bindtap="change" data-mycolor="#90c0c0"></view>
+		<view class="color" style="background-color:#99CCFF;" bindtap="change" data-mycolor="#99CCFF"></view>
+	</view>
+
+	<view class="color_container">
+		<view class="color" style="background-color:#FEB2B2;" bindtap="change" data-mycolor="#FEB2B2"></view>
+		<view class="color" style="background-color:#FFCC99;" bindtap="change" data-mycolor="#FFCC99"></view>
+		<view class="color" style="background-color:#B7DDC8;" bindtap="change" data-mycolor="#B7DDC8"></view>
+		<view class="color" style="background-color:#98D9FF;" bindtap="change" data-mycolor="#98D9FF"></view>
+	</view>
+
+	<view class="color_container">
+		<view class="color" style="background-color:#c8bfe7;" bindtap="change" data-mycolor="#c8bfe7"></view>
+		<view class="color" style="background-color:#FF985E;" bindtap="change" data-mycolor="#FF985E"></view>
+		<view class="color" style="background-color:#ffffff;" data-mycolor="#c8bfe7"></view>
+		<view class="color" style="background-color:#ffffff;" data-mycolor="#FF985E"></view>
+
+	</view>
+
+	<view class="bottom_image_container">
+		<image class="brush_bear" src="/image/bear_brush.gif"></image>
+	</view>
+</view>
+
+<!-- 以下为测试导航栏效果代码 -->
+<!-- <include src="/pages/botton/botton" /> -->

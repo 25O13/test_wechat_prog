@@ -1,0 +1,6 @@
+@import "/pages/botton/botton.wxss";
+
+.word {
+  font-family: "mf";
+
+}

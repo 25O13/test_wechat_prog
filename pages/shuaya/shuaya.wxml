@@ -1,0 +1,86 @@
+<!--pages/homePage/homePage.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+
+<view class="zongde" style="height:{{scrH*0.9}}px;width:{{scrW}}px;">
+	<view class="shang" style="background-color: {{theme_color}};width:{{scrW}}px;height:{{scrH*0.5}}px;">
+		<view class="shangshang">
+
+			<view class="zuo" wx:if="{{funcFlag ==0}}">
+				<view style="width: 100%; height: 50%; display: flex; justify-content: center; align-items: center;">
+					<image class="tupian" src="/image/naozhong.png"></image>
+				</view>
+				<view style="width: 100%; height: 50%; text-align: center;display: flex; justify-content: center; align-items: center;">
+					<text class="wenzi" wx:if="{{myFuncFlag[0]!=2}}">{{mytime}}</text>
+					<text class="wenzi" wx:if="{{myFuncFlag[0]==2}}">{{end_time}}</text>
+				</view>
+			</view>
+
+
+
+			<view class="zuo" wx:if="{{funcFlag == 1}}">
+				<view style="width: 100%; height: 50%; display: flex; justify-content: center; align-items: center;">
+				</view>
+				<view style=" height: 100%; text-align: center;" wx:if="{{myFuncFlag[1] == 0}}">
+					<text class="wenzi">吃完东西牙齿缝隙有食物残渣就快用牙线吧~</text>
+					<text class="wenzi"></text>
+				</view>
+
+				<view style="width: 100%; height: 50%; display: flex; flex-direction:column;  align-items: center;text-align: center;" wx:if="{{myFuncFlag[1] == 1}}">
+					<text class="wenzi">牙齿更干净啦~ </text>
+				</view>
+			</view>
+
+
+
+
+			<view class="zuo" wx:if="{{funcFlag == 2}}">
+				<view style="width: 100%; height: 50%; display: flex; justify-content: center; align-items: center;">
+				</view>
+				<view style=" height: 100%; text-align: center;" wx:if="{{myFuncFlag[2] == 0}}">
+					<text class="wenzi" >漱口水可以赶跑嘴巴里的细菌哦~</text>
+				</view>
+
+				<view style="width: 100%; height: 50%; display: flex; flex-direction:column;  align-items: center;text-align: center;" wx:if="{{myFuncFlag[2] == 1}}">
+					<text class="wenzi">口腔更干净啦~</text>
+				</view>
+
+			</view>
+
+		</view>
+		<view class="shangxia">
+			<view class="zuok" bindtap="change_L">
+				<view class="wai">
+					<view class="nei">
+						<image class="tupian3" src="/image/brush_{{funcFlag}}.png"></image>
+					</view>
+				</view>
+			</view>
+			<view class="zhongk" bindtap="myFunc">
+				<view class="dawai">
+					<view class="danei">
+						<image class="tupian4" src="/image/brush_{{(funcFlag+1)%3}}.png"></image>
+					</view>
+				</view>
+			</view>
+			<view class="youk" bindtap="change_R">
+				<view class="wai">
+					<view class="nei">
+						<image class="tupian3" src="/image/brush_{{(funcFlag+2)%3}}.png"></image>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+	<view class="xia" style="width:{{scrW}}px;height:{{0.22*scrH}}px;margin-top:{{0.2*scrH}}px;margin-top:{{0.1*scrH}}px;">
+		<view class="waiyuan">
+			<image class="tupian5" src="/image/ya.png"></image>
+		</view>
+		<image class="xj" src="/image/xijun.png"></image>
+		<image class="xj2" src="/image/xijun2.png"></image>
+		<image class="xj3" src="/image/xijun3.png"></image>
+		<image class="bd" src="/image/bingdu.png"></image>
+		<image class="bd2" src="/image/bingdu2.png"></image>
+	</view>
+</view>

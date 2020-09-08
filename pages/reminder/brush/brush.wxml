@@ -1,0 +1,51 @@
+<!--pages/reminder/brush/brush.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+
+<scroll-view class="reminder_container" scroll-y='true'>
+	<view class="reminder">
+		<text class="tip">{{tips}}</text>
+	</view>
+
+	<block wx:for="{{list}}" wx:for-item="item_name" wx:for-index="id">
+		<view class="reminder_2">
+			<view class="reminder_head">
+				<view class="txt_container">
+					<text class="reminder_txt">{{item_name.hint_txt}}</text>
+				</view>
+				<view class="img_container" bindtap="delete_reminder" wx:if="{{id > 1}}" data-myid="{{id}}">
+					<text class="img_txt">×</text>
+				</view>
+
+			</view>
+			<view class="reminder_body">
+				<view class="body_left">
+					<picker-view indicator-style="height: 50px;" style="width: 100%; height: 80%;flex: 0 0 45%" value="{{item_name.value}}" bindchange="bindChange" bindtap="test_tap" data-myid="{{id}}">
+						<picker-view-column>
+							<view wx:for="{{hours}}" style="line-height: 50px" class="hour">{{item}}</view>
+						</picker-view-column>
+						<view class="div">
+							<text class="div_txt">:</text>
+						</view>
+						<picker-view-column>
+							<view wx:for="{{mins}}" style="line-height: 50px" class="min"> {{item}}</view>
+						</picker-view-column>
+					</picker-view>
+				</view>
+				<view class="body_right">
+					<switch color="{{theme_color}}" class="swt" bindchange="test_swt" checked="{{item_name.able}}" data-myid="{{id}}"></switch>
+				</view>
+			</view>
+		</view>
+	</block>
+
+	<view class="reminder_3">
+		<view class="reminder_head">
+			<view class="txt_container">
+				<text class="reminder_txt">添加提醒</text>
+			</view>
+		</view>
+		<view class="reminder_body" bindtap="add_reminder">
+			<image class="add_reminder" src="/image/plus.png"></image>
+		</view>
+	</view>
+</scroll-view>

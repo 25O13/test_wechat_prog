@@ -1,0 +1,48 @@
+<!--pages/reminder/reminder.wxml-->
+<include src="/pages/navi/navi_back.wxml" />
+
+<view class="reminder_container">
+	<view class="reminder" bindtap="brush">
+		<view class="reminder_head">
+			<view class="txt">
+				<text class="tip">刷牙提醒</text>
+			</view>
+			<view class="next">
+				<image class="next_icon" src="/image/right.png"></image>
+			</view>
+		</view>
+		<view class="hint">
+			<text class="extip" wx:if="{{mor_e}}">早 {{mor_h}}:{{mor_m}}</text>
+			<text class="extip" wx:if="{{eve_e}}">晚 {{eve_h}}:{{eve_m}}</text>
+			<text class="extip" wx:if="{{(!eve_e)&&(!mor_e)}}">暂未设置早晚提醒哦</text>
+		</view>
+	</view>
+	<view class="reminder" bindtap="change">
+		<view class="reminder_head">
+			<view class="txt">
+				<text class="tip">换牙刷提醒</text>
+			</view>
+			<view class="next">
+				<image class="next_icon" src="/image/right.png"></image>
+			</view>
+		</view>
+		<view class="hint">
+			<text class="extip" wx:if="{{brush_num}}">当前牙刷已使用{{brush_num}}天</text>
+			<text class="extip" wx:if="{{!brush_num}}">今天才换的牙刷 ！</text>
+		</view>
+	</view>
+	<view class="reminder" bindtap="dental">
+		<view class="reminder_head">
+			<view class="txt">
+				<text class="tip">看牙医提醒</text>
+			</view>
+			<view class="next">
+				<image class="next_icon" src="/image/right.png"></image>
+			</view>
+		</view>
+		<view class="hint">
+			<text class="extip" wx:if="{{dental_num}}">{{dental_num}}天前看过牙医</text>
+			<text class="extip" wx:if="{{!dental_num}}">今天才看了牙医 ！</text>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,66 @@
+<!--pages/mine/mine.wxml-->
+<include src="/pages/navi/navi.wxml" />
+
+
+<view class="up">
+	<view style="width: 40%; height: 100%">
+		<view class="user_image" style="width: 100%; height: 45%"  bindtap="go_base">
+			<image class="image2" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+		</view>
+		<view style="width: 100%; height: 55%; text-align: center;">
+			<text class="message3" style="color: {{theme_color}}; font-family: 'mf';"> {{userInfo.nickName}}</text>
+		</view>
+	</view>
+	<view style="width: 60%; height: 100%">
+		<view style="width: 100%; height: 60%; display: flex;   justify-content: center; align-items: center; ">
+			<view class="hong" style="border-color: {{theme_color}};">
+				<view class="bai">
+					<view class='message' style="width: 100%; height: 60%;">
+						<view class="message1" style="color: {{theme_color}}; font-family: 'mf';"> 小朋友,</view>
+						<view class="message2" style="color: {{theme_color}}; font-family: 'mf';"> 今天正确刷牙了吗？</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="user_image" style="width: 100%; height: 40%">
+			<image style="width: 200rpx; height: 200rpx" src="/image/yagao.png"></image>
+		</view>
+	</view>
+
+</view>
+
+<view class="parent1">
+	<view class="parent_button" style="background-color: {{theme_color}}">
+		<view style="width : 30%; height :100%; display: flex;   justify-content: center; align-items: center;">
+			<image class='image6' src='/image/yonghu.png'> </image>
+		</view>
+		<view style="width : 70%; height : 100%; display: flex;   justify-content: center; align-items: center;">
+			<view class="parent" bindtap="go_data" style="background-color: {{theme_color}};  font-family: 'mf';">我是家长</view>
+		</view>
+	</view>
+</view>
+
+<view class="theme1">
+	<view class="theme_button" style="background-color: {{theme_color}}">
+		<view style="width : 30%; height :100%; display: flex;   justify-content: center; align-items: center;">
+			<image class='image7' src='/image/pencil.png'> </image>
+		</view>
+		<view style="width : 70%; height : 100%; display: flex;   justify-content: center; align-items: center;">
+			<view class="theme" bindtap="go_theme" style="background-color: {{theme_color}};  font-family: 'mf';">主题设置</view>
+		</view>
+	</view>
+</view>
+
+<view class="remind1">
+	<view class="remind_button" style="background-color: {{theme_color}}">
+		<view style="width : 30%; height :100%; display: flex;   justify-content: center; align-items: center;">
+			<image class='image8' src='/image/lingdang.png'>
+			</image>
+		</view>
+		<view style="width : 70%; height : 100%; display: flex;   justify-content: center; align-items: center;">
+			<view class="remind" bindtap="go_reminder" style="background-color: {{theme_color}};  font-family: 'mf';"> 提醒</view>
+		</view>
+	</view>
+</view>
+
+<include src="/pages/botton/botton" />

@@ -1,0 +1,35 @@
+{
+    "pages": [
+        "pages/shouquan/shouquan",
+        "pages/shuaya/shuaya",
+        "pages/parents/parents",
+        "pages/base/base",
+        "pages/login/login",
+        "pages/register/register",
+        "pages/task/task",
+        "pages/knowledge/clean/clean",
+        "pages/mytheme/mytheme",
+        "pages/mine/mine",
+        "pages/homePage/homePage",
+        
+       
+        "pages/reminder/reminder",
+        "pages/report/report",
+        "pages/reminder/brush/brush",
+        "pages/youxi/youxi",
+        "pages/photograph/photograph",
+        
+        "pages/botton/botton",
+        "pages/reminder/change/change",
+        "pages/reminder/dental/dental"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ff9999",
+        "navigationBarTitleText": "萌牙",
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "custom"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

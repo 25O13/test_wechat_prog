@@ -1,0 +1,7 @@
+<view style='height: {{statusBarHeight+jiaonangHeight}}px;background-color: {{theme_color}}' class="navi">
+	<view class="navi_L"></view>
+	<view class="navi_cen">
+		<text class="navi_txt">萌牙</text>
+	</view>
+	<view class="navi_R"></view>
+</view>

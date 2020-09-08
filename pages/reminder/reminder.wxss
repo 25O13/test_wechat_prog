@@ -1,0 +1,79 @@
+/* pages/reminder/reminder.wxss */
+page{
+    background-color: #f2f2f2;
+}
+
+.reminder_container {
+    background-color: #f2f2f2;
+    height: 100%;
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.reminder {
+    /* box-shadow: 10px 10px 5px #888888; */
+    /* 阴影，可选项 */
+    background-color: #FFFFFF;
+    height: 180rpx;
+    width: 700rpx;
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16rpx;
+}
+
+.reminder_head{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.txt{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.next{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hint{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+
+}
+
+.tip{
+    margin-left: 36rpx;
+    font-family: 'mf';
+    font-size: 40rpx;
+}
+
+.extip{
+    margin-left: 36rpx;
+    font-size: 28rpx;
+    font-family: 'mf';
+    color: #666666;
+}
+
+.next_icon{
+    width: 40rpx;
+    height: 40rpx;
+}

@@ -1,0 +1,58 @@
+<include src="/pages/navi/navi_back.wxml" />
+
+<view class="clean_container">
+	<view class="head_clean">
+		<text class="clean_text1" style="color:{{theme_color}}">儿童口腔{{choosen_func_txt[choosen_butt_func]}}的相关知识</text>
+		<image class='clean_image' src='/image/clean1.png'></image>
+	</view>
+
+	<view class="body_clean">
+
+		<view class="left">
+			<view class="toclean" style=" border-color:{{theme_color}};background-color: {{butt_co[0].bco}}" bindtap="choose_func" id="0">
+				<text class="clean_text" style="color: {{butt_co[0].co}}">清洁</text>
+			</view>
+
+			<view class="toprotect" style="border-color:{{theme_color}};background-color: {{butt_co[1].bco}}" bindtap="choose_func" id="1">
+				<text class="protect_text" style="color: {{butt_co[1].co}}">保护</text>
+			</view>
+
+			<view class="togrow" style="border-color:{{theme_color}};background-color: {{butt_co[2].bco}}" bindtap="choose_func" id="2">
+				<text class="grow_text" style="color: {{butt_co[2].co}}">发育</text>
+			</view>
+
+			<view class="clean_decorate">
+				<image class="clean_icon" src='/image/icon1.png'></image>
+			</view>
+		</view>
+
+		<view class="right" style="background-color:{{theme_color}}">
+			<view class="age_hint">
+				<text class="age_hint_txt">{{choosen_age_txt[choosen_butt_age]}}</text>
+			</view>
+			<view class="scroll_container">
+				<scroll-view class="messa" scroll-y="true">
+					<block wx:for="{{list[choosen_butt_age][choosen_butt_func]}}">
+						<view class="lines">
+							<view class="column">
+								<text class = "info" style="color: {{theme_color}}">{{item}}</text>
+							</view>
+							<!-- <view class="column">
+						<text class = "time">{{item.time}}</text>
+					</view>
+					<view class="column">
+						<text class = "tool">{{item.tool}}</text>
+					</view>
+					<view class="column">
+						<text class = "lasting">{{item.lasting}}</text>
+					</view> -->
+						</view>
+					</block>
+				</scroll-view>
+			</view>
+
+		</view>
+
+	</view>
+
+</view>

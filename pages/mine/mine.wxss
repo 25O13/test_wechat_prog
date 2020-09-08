@@ -1,0 +1,167 @@
+/* pages/mine/mine.wxss */
+@import "/pages/botton/botton.wxss";
+
+.up {
+  height: 550rpx;
+  width: 100%;
+  display: flex;
+}
+
+.hong {
+
+  width: 350rpx;
+  height: 200rpx;
+  border-width: 5rpx;
+  border-color: #FF9999;
+  border-style: dashed;
+  border-radius: 50% / 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message1 {
+  font-size: 35rpx;
+  color: #ff9999;
+  margin-left: 15rpx;
+}
+
+.message2 {
+  font-size: 35rpx;
+  color: #ff9999;
+  margin-left: 15rpx;
+}
+
+.image1 {
+  width: 450rpx;
+  height: 200rpx;
+  margin-top: 50rpx;
+  margin-left: 260rpx;
+  position: absolute;
+}
+
+.image2 {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.message3 {
+  font-size: 30rpx;
+  color: #ff9999;
+
+}
+
+.image3 {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 300rpx;
+  margin-left: 500rpx;
+  position: absolute;
+}
+
+.parent_button {
+  width: 50%;
+  height: 100rpx;
+  background-color: #ff9999;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent1 {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image6 {
+  width: 80rpx;
+  height: 80rpx;
+
+}
+
+.user_image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.parent {
+  font-size: 60rpx;
+  width: 270rpx;
+  color: #ffffff;
+
+}
+
+.theme1 {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme_button {
+  width: 50%;
+  height: 100rpx;
+  background-color: #ff9999;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image7 {
+  width: 65rpx;
+  height: 65rpx;
+
+}
+
+.theme {
+  font-size: 60rpx;
+  width: 270rpx;
+  color: #ffffff;
+
+}
+
+.remind1 {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remind_button {
+  width: 50%;
+  height: 100rpx;
+  background-color: #ff9999;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image8 {
+  width: 80rpx;
+  height: 80rpx;
+
+}
+
+.remind {
+  font-size: 60rpx;
+  width: 190rpx;
+  color: #ffffff;
+  
+}

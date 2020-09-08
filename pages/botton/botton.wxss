@@ -1,0 +1,96 @@
+/* pages/botton/botton.wxss */
+.botton_container {
+    /* margin-bottom: ; */
+
+    height: 9%;
+    width: 100%;
+    position: fixed;
+    bottom: 0rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    height: 80%;
+    width: 100rpx;
+    margin-left: 18rpx;
+    margin-right: 18rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24rpx;
+}
+
+.icon_2{
+    height: 100%;
+    width: 180rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.icon_image{
+    height: 75rpx;
+    width: 75rpx;
+}
+
+.icon_image_2{
+    height: 140rpx;
+    width: 140rpx;
+    margin-bottom: 50rpx;
+} */
+
+.icon_image_3{
+    height: 65rpx;
+    width: 80rpx;
+}
+.house{
+    font-family: "mf";
+    font-size: 80rpx;
+}
+
+.cam{
+    font-family: "mf";
+    font-size: 80rpx;
+}
+
+.tooth{
+    font-family: "mf";
+    font-size: 140rpx;
+}
+
+.book{
+    font-family: "mf";
+    font-size: 65rpx;
+}
+
+.me{
+    font-family: "mf";
+    font-size: 75rpx;
+}
+
+.tooth_container{
+    width: 180rpx;
+    height: 180rpx;
+    position: fixed;
+    bottom: 0rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooth_box{
+    height: 135rpx;
+    width: 135rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70rpx;
+    background-color:white;
+}
